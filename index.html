@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>TaskFlow</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>TaskFlow</h1>
+
+<p>
+Manage your tasks efficiently
+</p>
+<button
+id="themeBtn"
+onclick="toggleTheme()">
+
+🌙
+
+</button>
+</header>
+
+<div class="task-form">
+
+<input
+type="text"
+id="taskInput"
+placeholder="Enter Task">
+
+<select id="priority">
+
+<option>High</option>
+
+<option>Medium</option>
+
+<option>Low</option>
+
+</select>
+
+<input
+type="date"
+id="dueDate">
+
+<button onclick="addTask()">
+Add Task
+</button>
+
+</div>
+
+<div class="stats">
+
+    <div class="card">
+        <h2 id="totalTasks">0</h2>
+        <p>Total Tasks</p>
+    </div>
+
+    <div class="card">
+        <h2 id="completedTasks">0</h2>
+        <p>Completed</p>
+    </div>
+
+    <div class="card">
+        <h2 id="pendingTasks">0</h2>
+        <p>Pending</p>
+    </div>
+
+</div>
+
+<ul id="taskList">
+<input
+type="text"
+id="searchTask"
+placeholder="Search Tasks..."
+onkeyup="searchTask()">
+
+</ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
